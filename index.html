@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Gerlâne Lima">
+
+  <link rel="stylesheet" href="style.css">
+  <link href='https://css.gg/arrow-right.css' rel='stylesheet'>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="icon.ico"/>
+  <title>Portifólio</title>
+</head>
+<body>
+
+  <nav>
+    <a href="#first">
+      <div class="tooltip">
+        <img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png"/>
+        <span class="tooltiptext">Início</span>
+      </div>
+    </a>
+    <a href="#second">
+      <div class="tooltip">
+        <img src="https://img.icons8.com/material-outlined/48/000000/info.png"/>
+        <span class="tooltiptext">Sobre Mim</span>
+      </div>
+    </a>
+    <a href="#third">
+      <div class="tooltip">
+        <img src="https://img.icons8.com/material-outlined/48/000000/folder-invoices.png"/>
+        <span class="tooltiptext">Projetos</span>
+      </div>
+    </a>
+    <a href="#fourth">
+      <div class="tooltip">
+        <img src="https://img.icons8.com/material-outlined/48/000000/contacts.png"/>
+        <span class="tooltiptext">Contato</span>
+      </div>
+    </a>
+    <a href="#fifth">
+      <div class="tooltip">
+        <img src="https://img.icons8.com/material-outlined/48/000000/toolbox.png"/>
+        <span class="tooltiptext">Créditos</span>
+      </div>
+    </a>
+  </nav>
+
+  <div class= 'container'>
+    <div id= 'first'>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
+      <div class="content">
+        <h1 class="hide">Olá, meu nome é Gerlâne</h1>
+        <p class="hide">e esse é o meu portifólio</p>
+      </div>
+    </div>
+
+    <section id="second">
+      <div id="about-myself" class="content">
+        <h1>Sobre mim</h1>
+
+        <!-- Tab links -->
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'form')">Formação</button>
+          <button class="tablinks" onclick="openCity(event, 'qual')">Qualificações</button>
+          <button class="tablinks" onclick="openCity(event, 'inter')">Interesses</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="form" class="tabcontent">
+          <h3></h3>
+          <p>Formada com honras como Bacharela em Sistemas de Informação,
+          pela Universidade Federal do Acre em 2017. Trabalho de Conclusão de
+        Curso 'Avaliação de Comunicabilidade no Ambiente Virtual de Aprendizagem
+        da Universidade Federal do Acre' pode ser lido
+        <a href="https://drive.google.com/file/d/1zewNSrv3oDyFIjkTxYgs39SFdJDsXwEH/view?usp=sharing"
+        target="_blank" class="tcc">aqui.</a></p>
+        </div>
+
+        <div id="qual" class="tabcontent">
+          <h3></h3>
+          <p>— Responsive Web Design - freeCodeCamp, 300h, 2021.</p>
+          <p>— Especialização em Marketing e Publicidade - Universidade da Amazônia, cursando.</p>
+          <p>— CorelDRAW X7 - Escola Aberta de Informática/SENAC, 30h, 2020.</p>
+          <p>— Adobe Photoshop CC - Escola Aberta de Informática/SENAC, 40h, 2019.</p>
+          <p>— Treinamento em Marketing Digital - Instituto Euvaldo Lodi IEL/NR-AC, 12h, 2019.</p>
+          <p>— Inglês - Centro de Estudo de Línguas do Estado do Acre, 2018 - 2019.</p>
+          <p>— Francês - Centro de Estudo de Línguas do Estado do Acre, 2015 - 2018.</p>
+          <p>— Bacharelado em Sistemas de Informação - Universidade Federal do Acre, 2013 - 2017.</p>
+        </div>
+
+        <div id="inter" class="tabcontent">
+          <h3></h3>
+          <p>Blá</p>
+        </div>
+
+        <script>
+        function openCity(evt, item) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(item).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+
+    </div>
+  </section>
+
+  <section id="third">
+    <div class="content" style="align-content: center;">
+      <h1>Em construção</h1>
+      <div class="spinner"></div>
+    </div>
+  </section>
+
+  <section id="fourth">
+    <div class="content">
+      <h1>Contato</h1>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg" alt="freecodecamp">
+          <div class="txt">
+            <p>freeCodeCamp</p>
+            <p id="dsc">Certificações frontend</p>
+          </div>
+          <a class="btn" href="https://www.freecodecamp.org/gerlaneln" target="_blank">
+            <p style="padding: 5px;"><span class="decor">/</span>gerlaneln</p>
+          </a>
+        </div>
+
+        <div class="grid-item">
+          <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen">
+          <div class="txt">
+            <p>codepen</p>
+            <p id="dsc">Portifólio de códigos</p>
+          </div>
+          <a class="btn" href="https://codepen.io/gerlima96" target="_blank">
+            <p style="padding: 5px;"><span class="decor">/</span>gerlane96</p>
+          </a>
+        </div>
+
+        <div class="grid-item">
+          <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="linkedin">
+          <div class="txt">
+            <p>LinkedIn</p>
+            <p id="dsc">Perfil profissional</p>
+          </div>
+          <a class="btn" href="www.linkedin.com/in/gerlaneln" target="_blank">
+            <p style="padding: 5px;"><span class="decor">/</span>gerlaneln</p>
+          </a>
+        </div>
+
+        <div class="grid-item">
+          <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github">
+          <div class="txt">
+            <p>GitHub</p>
+            <p id="dsc">Repositório pessoal</p>
+          </div>
+          <a class="btn" href="https://github.com/gerlaneln" target="_blank">
+            <p style="padding: 5px;"><span class="decor">/</span>gerlaneln</p>
+          </a>
+        </div>
+
+        <div class="grid-item">
+          <img src="https://logosmarcas.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="gmail">
+          <div class="txt">
+            <p>Gmail</p>
+            <p id="dsc">e-mail profissional</p>
+          </div>
+          <a class="btn" href="mailto:gerlima96@gmail.com" target="_blank">
+            <p style="padding: 5px;"><span class="decor">/</span>gerlima96</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fifth">
+    <div class="content">
+      <h1>Créditos</h1>
+      <p>Todo o conteúdo não desenvolvido por mim, foi retirado de fontes open source.</p>
+      <p>Estão sendo devidamente creditadas de acordo com suas políticas de uso.</p>
+      <p>Ícones:
+        <a href="https://icons8.com/icon/set/popular/material-outlined">
+          Icons8
+        </a>
+      </p>
+      <table>
+        <tr>
+          <td><img class="img-crd" src="https://img.icons8.com/material-outlined/48/000000/home--v2.png"/></td>
+          <td><a href="https://icons8.com/icon/83326/home">Home icon by Icons8</a></td>
+        </tr>
+        <tr>
+          <td><img class="img-crd" src="https://img.icons8.com/material-outlined/24/000000/info.png"/></td>
+          <td><a href="https://icons8.com/icon/82742/info">Info icon by Icons8</a></td>
+        </tr>
+        <tr>
+          <td><img class="img-crd" src="https://img.icons8.com/material-outlined/24/000000/folder-invoices.png"/></td>
+          <td><a href="https://icons8.com/icon/82790/folder">Folder icon by Icons8</a></td>
+        </tr>
+        <tr>
+          <td><img class="img-crd" src="https://img.icons8.com/material-outlined/24/000000/contacts.png"/></td>
+          <td><a href="https://icons8.com/icon/85011/contacts">Contacts icon by Icons8</a></td>
+        </tr>
+        <tr>
+          <td><img class="img-crd" src="https://img.icons8.com/material-outlined/24/000000/toolbox.png"/></td>
+          <td><a href="https://icons8.com/icon/82543/toolbox">Toolbox icon by Icons8</a></td>
+        </tr>
+      </table>
+      <p>Animação da página inicial:
+        <a href="https://codepen.io/chris22smith/pen/RZogMa">
+          Chris Smith
+        </a>
+        |
+        <a href="https://freefrontend.com/css-animated-backgrounds/">Free Frontend</a>
+      </p>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
