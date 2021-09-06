@@ -359,11 +359,16 @@ section:target h1{
 @media only screen and (max-width: 1111px){
   
   #four{
+    margin-left: 20%;
     overflow: scroll;
   }
 
   #contatoDiv{
     display: block;
+  }
+
+  .grid-item{
+    padding: 10px;
   }
 
   #fourth img{
