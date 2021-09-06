@@ -368,9 +368,7 @@ section:target h1{
 
   #contatoDiv{
     display: grid;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-auto-flow: row;
+    grid-template-columns: auto auto;
     padding: 5px;
   }
 
