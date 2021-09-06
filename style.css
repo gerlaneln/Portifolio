@@ -361,10 +361,15 @@ section:target h1{
   #four{
     margin-left: 15%;
     margin-right: 10%;
+    overflow: hidden;
   }
 
   #contatoDiv{
     display: block;
+  }
+
+  .grid-item{
+    margin: 1em;
   }
 }
 
