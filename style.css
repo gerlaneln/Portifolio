@@ -259,6 +259,13 @@ section:target h1{
   color: #0181D4;
 }
 
+@media only screen and (max-width: 800px) {
+  #about-myself{
+    width: 100vw;
+    overflow-y: scroll;
+  }
+}
+
 /*terceira página*/
 
 .spinner {
