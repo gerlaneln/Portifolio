@@ -366,6 +366,11 @@ section:target h1{
     display: block;
   }
 
+  #fourth img{
+    width: auto;
+    height: 1em;
+  }
+
 }
 
 /*quinta página*/
