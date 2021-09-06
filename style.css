@@ -359,11 +359,11 @@ section:target h1{
 @media only screen and (max-width: 1111px){
   
   #four{
-    margin-top: 40%;
+    /* margin-top: 40%;
     margin-bottom: 10%;
     margin-left: 15%;
     margin-right: 10%;
-    overflow: scroll;
+    overflow: scroll; */
   }
 
   #contatoDiv{
