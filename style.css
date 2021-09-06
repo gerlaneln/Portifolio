@@ -365,6 +365,7 @@ section:target h1{
 
   #contatoDiv{
     display: block;
+    width: 100vw;
   }
 
   .grid-item{
