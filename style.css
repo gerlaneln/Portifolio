@@ -418,3 +418,17 @@ td{
   width: 20px;
   height: auto;
 }
+
+
+@media only screen and (max-width: 770px){
+
+  #five{
+    width: 100vw;
+    margin-left: 25%;
+  }
+
+  table{
+    overflow: auto;
+  }
+
+}
