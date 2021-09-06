@@ -265,7 +265,8 @@ section:target h1{
   }
 
   .tabcontent{
-    overflow: hidden;
+    max-height: 600px;
+    overflow: scroll;
   }
 }
 
