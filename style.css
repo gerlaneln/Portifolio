@@ -280,106 +280,113 @@ section:target h1{
   0% {
     transform: perspective(120px) rotateX(0deg) rotateY(0deg);
     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-    } 50% {
+  } 50% {
       transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
       -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-      } 100% {
+    } 100% {
         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-      }
     }
+}
 
-    /*quarta página*/
+/*quarta página*/
 
-    .grid{
-      display: grid;
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-      grid-auto-flow: column;
-      padding: 5px;
-    }
+.grid{
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-auto-flow: column;
+  padding: 5px;
+}
 
-    .grid-item{
-      display: inline-block;
-      background-color: rgba(255,255,255,0.5);
-      border: 2px solid #235c5a;
-      border-radius: 25px;
-      width: 6.2em;
-      padding: 20px;
-      font-size: 30px;
-      text-align: center;
-      align-content: center;
-    }
+.grid-item{
+  display: inline-block;
+  background-color: rgba(255,255,255,0.5);
+  border: 2px solid #235c5a;
+  border-radius: 25px;
+  width: 6.2em;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  align-content: center;
+}
 
-    #fourth img{
-      width: auto;
-      height: 1.6em;
-    }
+#fourth img{
+  width: auto;
+  height: 1.6em;
+}
 
-    .txt{
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.6em;
-      font-weight: bolder;
-      text-align: center;
-      line-height: 1.5em;
-      padding: 5px;
-    }
+.txt{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6em;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 5px;
+}
 
-    #dsc{
-      font-size: 0.7em;
-    }
+#dsc{
+  font-size: 0.7em;
+}
 
-    .btn{
-      display: block;
-      font-family: Raleway, sans-serif;
-      text-align: center;
-      font-size: 0.6em;
-      background-image: linear-gradient(to left, #31817f, #00BCD4);
-      color: black;
-      background-size: 150% 150%;
-      height: 40px;
-      width: 100%;
-      border-radius: 25px;
-      z-index: -1;
-      transition: all 0.4s ease;
-      cursor: pointer;
-    }
+.btn{
+  display: block;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  font-size: 0.6em;
+  background-image: linear-gradient(to left, #31817f, #00BCD4);
+  color: black;
+  background-size: 150% 150%;
+  height: 40px;
+  width: 100%;
+  border-radius: 25px;
+  z-index: -1;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
 
-    .decor{
-      font-family: 'Roboto Mono', monospace;
-      font-size: 1.1em;
-      visibility: hidden;
-    }
+.decor{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1em;
+  visibility: hidden;
+}
 
-    .btn:hover .decor {
-      visibility: visible;
-    }
+.btn:hover .decor {
+  visibility: visible;
+}
 
-    /*quinta página*/
 
-    #fifth h1{
-      padding: 5px;
-      opacity: 1;
-    }
+@media only screen and (max-width: 1111px){
+  #contatoDiv{
+    display: block;
+  }
+}
 
-    #fifth p{
-      padding: 5px;
-    }
+/*quinta página*/
 
-    #fifth a{
-      color: black;
-      text-decoration: none;
-    }
+#fifth h1{
+  padding: 5px;
+  opacity: 1;
+}
 
-    #fifth a:hover{
-      color: grey;
-    }
+#fifth p{
+  padding: 5px;
+}
 
-    td{
-      padding: 5px;
-    }
+#fifth a{
+  color: black;
+  text-decoration: none;
+}
 
-    .img-crd{
-      width: 20px;
-      height: auto;
-    }
+#fifth a:hover{
+  color: grey;
+}
+
+td{
+  padding: 5px;
+}
+
+.img-crd{
+  width: 20px;
+  height: auto;
+}

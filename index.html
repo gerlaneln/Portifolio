@@ -70,9 +70,9 @@
 
         <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'form')">Formação</button>
-          <button class="tablinks" onclick="openCity(event, 'qual')">Qualificações</button>
-          <button class="tablinks" onclick="openCity(event, 'inter')">Interesses</button>
+          <button class="tablinks" onclick="aboutMe(event, 'form')">Formação</button>
+          <button class="tablinks" onclick="aboutMe(event, 'qual')">Qualificações</button>
+          <button class="tablinks" onclick="aboutMe(event, 'inter')">Interesses</button>
         </div>
 
         <!-- Tab content -->
@@ -88,6 +88,7 @@
 
         <div id="qual" class="tabcontent">
           <h3></h3>
+          <p>— Treinamento em desenvolvimento Full Stack - Gama Academy, 120h, 2021.</p>
           <p>— Responsive Web Design - freeCodeCamp, 300h, 2021.</p>
           <p>— Especialização em Marketing e Publicidade - Universidade da Amazônia, cursando.</p>
           <p>— CorelDRAW X7 - Escola Aberta de Informática/SENAC, 30h, 2020.</p>
@@ -100,11 +101,14 @@
 
         <div id="inter" class="tabcontent">
           <h3></h3>
-          <p>Blá</p>
+          <p>— Desenvolvimento front end.</p>
+          <p>— Desenvolvimento web responsivo.</p>
+          <p>— UX/UI.</p>
+          <p>— Comunicabilidade e usabilidade de interfaces.</p>
         </div>
 
         <script>
-        function openCity(evt, item) {
+        function aboutMe(evt, item) {
           var i, tabcontent, tablinks;
           tabcontent = document.getElementsByClassName("tabcontent");
           for (i = 0; i < tabcontent.length; i++) {
@@ -132,7 +136,7 @@
   <section id="fourth">
     <div class="content">
       <h1>Contato</h1>
-      <div class="grid">
+      <div class="grid" id="contatoDiv">
         <div class="grid-item">
           <img src="https://design-style-guide.freecodecamp.org/downloads/fcc_secondary_small.svg" alt="freecodecamp">
           <div class="txt">
@@ -181,7 +185,7 @@
           <img src="https://www.google.com/gmail/about/static/images/logo-gmail.png?cache=1adba63" alt="gmail">
           <div class="txt">
             <p>Gmail</p>
-            <p id="dsc">e-mail profissional</p>
+            <p id="dsc">E-mail profissional</p>
           </div>
           <a class="btn" href="mailto:gerlima96@gmail.com" target="_blank">
             <p style="padding: 5px;"><span class="decor">/</span>gerlima96</p>
