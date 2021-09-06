@@ -361,7 +361,7 @@ section:target h1{
   #four{
     margin-left: 15%;
     margin-right: 10%;
-    overflow: hidden;
+    overflow: scroll;
   }
 
   #contatoDiv{
